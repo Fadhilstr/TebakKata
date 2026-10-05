@@ -113,5 +113,5 @@ Cakupan pengujian meliputi:
 
 ---
 
-## Lisensi
+## LOVE
 FADHIL SATRIA WIDODO.
