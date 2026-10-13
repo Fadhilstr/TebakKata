@@ -23,11 +23,11 @@ Pemain harus menemukan **satu kata rahasia harian** berdasarkan kedekatan makna/
 Browser (Client)
       │
       ▼
-Nginx Reverse Proxy (:80)
-   ├── /api/  ──► FastAPI Backend (:8000)
-   │                  ├── PostgreSQL 16 + pgvector (:5432)
+Nginx Reverse Proxy 
+   ├── /api/  ──► FastAPI Backend 
+   │                  ├── PostgreSQL 16 + pgvector 
    │                  └── In-Memory Semantic Ranking Matrix
-   └── /      ──► Vue 3 + Vite Frontend (:80)
+   └── /      ──► Vue 3 + Vite Frontend 
 ```
 
 ---
@@ -73,9 +73,7 @@ alembic upgrade head
 python scripts/prepare_vocabulary.py
 python scripts/seed_database.py
 
-# Menjalankan server FastAPI
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
+
 
 ### 3. Frontend
 Masuk ke direktori frontend di terminal terpisah:
@@ -84,7 +82,6 @@ cd frontend
 npm install
 npm run dev
 ```
-Buka `http://localhost:5173` di browser.
 
 ---
 
